@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.glass {
+  background: rgba(159, 188, 112, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  @apply sm:bg-transparent sm:shadow-none sm:border-none;
+}
+
+li {
+  @apply font-medium cursor-pointer duration-300 hover:text-[#9FBC70];
+}
+
+.btn {
+  @apply p-2 px-5 bg-black rounded-xl font-bold text-white duration-300 hover:bg-transparent;
+}
+
+form input {
+  @apply p-2 px-3 text-lg font-medium outline-none  rounded-xl bg-transparent border md:bg-[#eeeeee] cursor-pointer;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  @apply bg-black w-2 h-2 mt-5;
+}
+
+footer input {
+  @apply md:w-96;
+}
